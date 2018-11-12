@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display|Ubuntu:300");
+* {
+  font-family: 'PlayfairDisplay', serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+header, section.banner {
+  width: 100%;
+  max-width: 1063px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #626262;
+  margin: 10px 1px 25px 1px;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #c7c1b6;
+  text-transform: uppercase;
+}
+
+p {
+  color: #626262;
+  line-height: 24px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo, nav ul {
+  margin: 50px 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+nav li {
+  margin-left: 100px;
+  list-style: none;
+}
+
+nav a {
+  color: #626262;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+section.post-intro, .post-grid, container {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+h3.comment {
+  margin-top: 50px;
+}
+
+section.post-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 60px;
+}
+
+section.post-grid h3 {
+  margin: 20px 0;
+}
+
+section.newsletter {
+  background: #f0f0f0;
+  padding: 60px 0 70px 0;
+  margin-top: 100px;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.container .input-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 38%;
+  min-width: 340px;
+  max-width: 340px;
+  margin: auto;
+  border-bottom: 1px solid #626262;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+.container input[type="text"] {
+  background: #f0f0f0;
+  border: none;
+}
+
+section.load-more {
+  margin-top: 160px;
+  margin-bottom: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.load-more a {
+  padding: 20px 35px;
+  font-size: 20px;
+  border: 1px solid #626262;
+  color: #626262;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+section.load-more a:hover {
+  color: #000;
+  border-color: #000;
+}
+
+footer {
+  background: #f0f0f0;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+footer li a {
+  color: #202020;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 20px;
+  color: #202020;
+}
+
+footer li:nth-child(1) {
+  margin-left: 0;
+}
+
+footer i {
+  color: #626262;
+}
+
+footer i:hover {
+  color: #202020;
+}
+
+@media screen and (max-width: 1125px) {
+  header {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1063px) {
+  nav li {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 929px) {
+  nav li {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 20px 0;
+  }
+  .logo, nav ul {
+    margin: 10px 0;
+  }
+  nav li:nth-child(1) {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
